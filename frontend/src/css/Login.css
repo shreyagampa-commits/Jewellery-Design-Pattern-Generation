@@ -1,0 +1,476 @@
+.josefin-slab-font {
+    font-family: "Josefin Slab", serif;
+    font-style: normal;
+}
+
+.body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background: url('../img/women.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    box-shadow: 0 0 15px 7px #090505;
+    color: bisque;
+    width: 100%;
+    height: 50px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 750;
+    margin: 0px 12px;
+}
+
+.navitems {
+    position: absolute;
+    right: 0;
+    top:10px;
+    font-size: 12px;
+    margin: 0px 32px;
+}
+
+.notnavitems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 40px;
+    top:60px;
+    width: 200px;
+    height: 150px;
+    border-radius: 30px;
+    backdrop-filter: blur(100px);
+}
+/* Login container styling */
+.containerlogin {
+    color: rgb(237, 221, 178);
+    position: relative;
+    border: 2px solid white;
+    margin: 20vh 20vh;
+    padding: 40px;
+    width: 90%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 28px;
+    backdrop-filter: blur(10px);
+    opacity: 0.9;
+    font-size: 15px;
+    transition: width 0.3s ease-in-out;
+}
+/* Google Sign-in Button */
+.g-signin-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    color: rgb(27, 7, 7);
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
+    height: 35px;
+    width: 280px;
+    position: absolute;
+    left:62px;
+    bottom: 19px;
+}
+
+.button-text{
+    font-size: 10px;
+}
+
+.g-signin-button:hover {
+    border-radius: 0px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: rgb(233, 233, 233);
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.google-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.button-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+}
+
+/* Styling for input fields */
+.details input {
+    text-align: center;
+    display: block;
+    width: 70%;
+    height: 35px;
+    max-width: 400px;
+    padding: 0px;
+    border: 2px solid black;
+    margin: 10px auto;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+
+.containerlogin button {
+    border-radius: 6px;
+    display: block;
+    width: 40%;
+    padding: 5px;
+    margin: 15px auto;
+    margin-bottom: 0px;
+    color:black;
+    background-color: antiquewhite;
+    text-align: center;
+    /* font-size: 16px; */
+}
+
+/* .containerlogin button:hover,
+.btn:hover {
+    background-color: antiquewhite;
+} */
+.drop-down {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 30px;
+    background-image: url('../img/profile.jpg');
+    background-size: cover;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+input{
+    color: black;
+    height: 40px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.hamburger{
+    display: none;
+}
+@media (max-width: 768px) {
+    .navitems ul {
+        display: none; 
+        flex-direction: column;
+        background-color: rgb(2, 6, 22);
+        position: relative;
+        top: 105px;
+        right: 0;
+        width: 100%;
+    }
+
+    .navitems ul li {
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #fff;
+    }
+    .uploadbtn {
+        margin-top: 10px;
+        padding: 7px 13px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+        background-color: white;
+    }
+    .uploadbtn {
+        width: 150px;
+        margin: 10px;
+        position: relative;
+        left: 12px;
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 60px;
+    }
+    .show{
+        display: flex !important;
+    }
+}
+.s {
+    top:5px;
+    color: antiquewhite;
+    font-size: 1px;
+}
+.sl{
+    position: relative;
+    top: 10px;
+}
+.heading {
+    color: rgb(245, 219, 181);
+    margin-bottom: 20px;
+    font-weight: 700;
+
+}
+
+.h {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+}
+.link{
+    /* padding: 12px; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: beige;
+    text-decoration: none;
+}
+.link:hover {
+    color: rgb(255, 255, 255);
+}
+.g-signin-button{
+    padding: 20px;
+}
+hr{
+    margin: 0px 0;
+    color: inherit;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: .25;
+    position: relative;
+    bottom: 15px;
+}
+.a {
+    width: 10px;
+    height: 20px;
+    color: #090505;
+    position: absolute;
+    top: 44%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+}
+.toggle-password,
+.toggle-password1,
+.toggle-password2 {
+    background-color: white;
+    width: fit-content;
+    position: absolute;
+    right: 25%;
+    top: 37%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.toggle-password1{
+    top: 190px;
+}
+.toggle-password2{
+    top: 236px;
+}
+.s{
+    font-size: 15px;
+    margin: 0;
+    position: relative;
+    bottom: 10px;
+}
+/* Responsive styling for tablets and smaller screens */
+@media screen and (max-width: 768px) {
+    .containerlogin {
+        width: 80%;
+        padding: 20px;
+        margin: 30vh auto;
+        height: 315px;
+    }
+
+    .details input {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .navitems {
+        display: none;
+    }
+
+    .google-logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    .button-text {
+        font-size: 1rem;
+    }
+
+    .toggle-password,
+    .toggle-password1,
+    .toggle-password2 {
+        right: 45px;
+        top: 110px;
+    }
+}
+
+/* Responsive styling for mobile screens */
+@media screen and (max-width: 480px) {
+    *{
+        font-size: small;
+    }
+    .g-signin-button{
+        top:260px;
+        left: 30px;
+    }
+    .h{
+        top: 15px;
+        left: 20px;
+    }
+    .containerlogin {
+        width: 95%;
+        padding: 15px;
+        margin: 100px auto;
+        font-size: 18px;
+        height: 310px;
+    }
+
+    .details input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .google-logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .button-text {
+        font-size: 0.9rem;
+    }
+
+    .toggle-password {
+        right: 23px;
+        top: 34%;
+    }
+    .toggle-password1 {
+        right: 20px;
+        top: 48%;
+    }
+    .toggle-password2 {
+        right: 20px;
+        top: 63%;
+    }
+    .containerlogin h1 {
+        font-size: 1.5rem;
+    }
+
+    .containerlogin button {
+        width: 60%;
+        font-size: 14px;
+    }
+
+    .a {
+        font-size: 16px;
+        right: 8px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .s{
+        font-size: 18px;
+    }
+    .g-signin-button{
+        top:260px;
+        left: 10px;
+
+    }
+    .h{
+        top: 15px;
+        left: 20px;
+    }
+    .containerlogin {
+        width: 95%; 
+        padding: 10px; 
+        margin: 80px auto; 
+    }   
+
+    .details input {
+        font-size: 12px;
+    }
+
+    .google-logo {
+        width: 16px;
+        height: 16px;
+    }
+
+    .button-text {
+        font-size: 0.8rem;
+    }
+
+    .toggle-password,
+    .toggle-password1,
+    .toggle-password2 {
+        right: 22px;
+    }.toggle-password{
+        top: 32%;
+    }
+    .toggle-password1{
+        top: 45.5%;
+    }
+    .toggle-password2{
+        top: 61%;
+    }
+    .containerlogin h1 {
+        font-size: 1.2rem;
+    }
+
+    .containerlogin button {
+        width: 70%;
+        font-size: 12px;
+    }   
+}

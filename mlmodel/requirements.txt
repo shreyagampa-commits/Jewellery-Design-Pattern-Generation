@@ -1,0 +1,19 @@
+#Flask
+#Flask-CORS
+#command is pip install -r requirements.txt
+tensorflow==2.12
+keras==2.12
+gdown
+numpy
+Pillow
+requests
+python-dotenv
+#gunicorn
+#torch
+#torchvision
+opencv-python
+opencv-python-headless
+#tensorflow-cpu
+fastapi
+uvicorn
+pydantic
